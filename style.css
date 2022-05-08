@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Tourney', 'Jua', monospace;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+button {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.game {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  height: 100vh;
+  max-height: 700px;
+  background-color: #c9dcde;
+  border-radius: 30px;
+}
+
+.game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 322px;
+  height: 70px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.level,
+.score {
+  display: flex;
+  flex-direction: column;
+  color: #0e3b5e;
+}
+
+.game-header strong {
+  font-size: 16px;
+  color: #087ab8;
+  font-weight: 400;
+}
+
+.game-header span {
+  font-size: 34px;
+}
+
+.game-main {
+  margin: 0 auto 20px;
+  background-color: #22253e;
+  border-radius: 4px;
+  color: #fff;
+}
+
+td {
+  width: 30px;
+  height: 30px;
+  box-shadow: 1px 1px #121820;
+  border-radius: 2px;
+}
+
+.pop-up {
+  /*display: none;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-52%, -50%);
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  margin: auto;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #77767cc0;
+}
+
+.pop-up h1 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+.controller-box {
+  text-align: center;
+}
+
+.controller {
+  width: 50px;
+  height: 50px;
+  margin: 6px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #209dd9;
+  box-shadow: 1px 1px #145c8b, 2px 2px #145c8b, 3px 3px #145c8b, 4px 4px #145c8b,
+    6px 6px #145c8b, 6px 8px #145c8b, -1px 1px #145c8b, -2px 2px #145c8b,
+    -3px 3px #145c8b, -4px 4px #145c8b, -6px 6px #145c8b, -6px 8px #145c8b;
+}
+
+.controller:active {
+  transform: translateY(2px);
+}
+
+.stop-btn {
+  margin-left: 20px;
+}
+
+.stop-btn,
+.popup-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #a597fc;
+  box-shadow: 1px 1px #595bb7, 2px 2px #595bb7, 3px 3px #595bb7, 4px 4px #595bb7,
+    5px 5px #595bb7, 6px 6px #595bb7;
+}
+
+.popup-btn:active,
+.stop-btn:active {
+  transform: translate(2px, 2px);
+}
